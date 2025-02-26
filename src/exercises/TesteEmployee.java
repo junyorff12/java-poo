@@ -14,18 +14,22 @@ public class TesteEmployee {
 		
 		var employee = new Employee();
 		
-		System.out.println("Enter with the name, grossSalary and tax of the employee: ");
+		System.out.println("Enter with the data of the employee: ");
+		System.out.println("Name: ");
 		employee.setName(sc.nextLine());
+		System.out.println("GrossSalary: ");
 		employee.setGrossSalary(sc.nextDouble());
+		System.out.println("Tax: ");
 		employee.setTax(sc.nextDouble());
 		
-		System.out.printf("Employee: %s, $ %.2f%n", employee.getName(), employee.netSalary());
+		System.out.println("Employee" + employee);
+		
 		
 		System.out.println("Which percentage to increase salary? ");
 		
 		employee.increaseSalary(sc.nextDouble());
 		
-		System.out.printf("Updated Data: %s, $ %.2f%n", employee.getName(), employee.getGrossSalary());
+		System.out.println("Updated Data: " + employee);
 		
 		sc.close();
 
